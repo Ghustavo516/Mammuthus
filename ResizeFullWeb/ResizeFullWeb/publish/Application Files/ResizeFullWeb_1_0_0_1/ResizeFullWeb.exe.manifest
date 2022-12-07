@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="ResizeFullWeb.exe" version="1.0.0.1" publicKeyToken="3b29894181acbe10" language="neutral" processorArchitecture="msil" type="win32" />
+  <description asmv2:iconFile="resize.ico" xmlns="urn:schemas-microsoft-com:asm.v1" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="ResizeFullWeb" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="ResizeFullWeb.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          Opções de Manifesto do UAC
+          Para alterar o nível de Controle de Conta de Usuário do Windows, substitua o nó
+          requestedExecutionLevel por um dos seguintes.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+         Para utilizar a Virtualização de Arquivos e Registro para manter a compatibilidade com versões anteriores,
+         exclua o nó requestedExecutionLevel.
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ResizeFullWeb.exe" size="31216">
+      <assemblyIdentity name="ResizeFullWeb" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>ZKcmwda97cfQQazndEdufSPjAbmFdDenzXYQtXwlYXU=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="resize.ico" size="8879">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>nKbKaBFztndAmPqHAiD+PIkON06Wj8oIxPkySrXSMwQ=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="ResizeFullWeb.exe.config" size="188">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>VDy5/VrQni+RSOb/6uEMWMc6bGQEaa2e2UdeWG+KK1I=</dsig:DigestValue>
+    </hash>
+  </file>
+<publisherIdentity name="CN=DESKTOP-GIB8BCA\u039115" issuerKeyHash="1e38109b43e3576893bf1e960aec86d22ab46213" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>A2pEfWe5SOFq3cvcTVb8YC6efk6kpfbjz0yodPJG6Dk=</DigestValue></Reference></SignedInfo><SignatureValue>dMNRtXWQygiEfVDTTLEGX15nCzOuDlZ14h8oglW+r76E3jr/c9AVAyOQ9U9GpOHYnajdlr+L+7q8EL51/bVigVXiW/Q3hDi2Wl6Adj76uQOA3FGfse56IaM0kjPsHTZwOdAyPdXVWBYaIL6hYqYZCLg5m8OuaxHxrWuSAjt8TG4=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>rYoqv+l5uAgkU9l7SqJKFoNRRv81M6lVT0kkIy6lsh8BtEitHW293W6lwN64zSIwB1gvm44bHoHIznzs/kOiwlYSXVRtKENWX3qQd5hcxB4f62mf9EcDcJoVBgfbTyDYDH+Q29wFI4frDxcrjPm29xy3eabnvaW5xn3miIzsvLU=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="39e846f274a84ccfe3f6a5a44e7e9e2e60fc564ddccbdd6ae148b9677d446a03" Description="" Url=""><as:assemblyIdentity name="ResizeFullWeb.exe" version="1.0.0.1" publicKeyToken="3b29894181acbe10" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=DESKTOP-GIB8BCA\u039115</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>FhDzMjJ5OrT/NImyrTjx4w1ERo8kKXSCgJZiT7ZDfN4=</DigestValue></Reference></SignedInfo><SignatureValue>WrW+gCKLchr5DxLQV7LLnxvDTPLHj+9WoQ4YkbBayHEzJPGzfxzzyDw9UKQlgNHbaHG/YOYxXMqZoPY4PWcuW9TV2MjqGadbbxE/gH4R/FwrAzJEnyNK8Qr7ioC5wMCLqsMt4efDJluzDIxUDGBtMDB3g3bWNBLlcCCQmnQYybU=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>rYoqv+l5uAgkU9l7SqJKFoNRRv81M6lVT0kkIy6lsh8BtEitHW293W6lwN64zSIwB1gvm44bHoHIznzs/kOiwlYSXVRtKENWX3qQd5hcxB4f62mf9EcDcJoVBgfbTyDYDH+Q29wFI4frDxcrjPm29xy3eabnvaW5xn3miIzsvLU=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB9TCCAV6gAwIBAgIQM4wAbmX3oLpGfoZNi9pbTTANBgkqhkiG9w0BAQsFADA5MTcwNQYDVQQDHi4ARABFAFMASwBUAE8AUAAtAEcASQBCADgAQgBDAEEAXAB1ADAAMwA5ADEAMQA1MB4XDTIyMTEwODE2MTg0MVoXDTIzMTEwODIyMTg0MVowOTE3MDUGA1UEAx4uAEQARQBTAEsAVABPAFAALQBHAEkAQgA4AEIAQwBBAFwAdQAwADMAOQAxADEANTCBnzANBgkqhkiG9w0BAQEFAAOBjQAwgYkCgYEArYoqv+l5uAgkU9l7SqJKFoNRRv81M6lVT0kkIy6lsh8BtEitHW293W6lwN64zSIwB1gvm44bHoHIznzs/kOiwlYSXVRtKENWX3qQd5hcxB4f62mf9EcDcJoVBgfbTyDYDH+Q29wFI4frDxcrjPm29xy3eabnvaW5xn3miIzsvLUCAwEAATANBgkqhkiG9w0BAQsFAAOBgQAwBMBWVNd2hDgHQn8EN5rqiZiFKJ0ImWhtjwIZ+38hLeRxVN+E1XVylBSrl6Xuq1Z7bAMwjYjZu6HGLU9OKkjPuw/hyWtk+R81pe9G2gKHJUrO0CZ8PWr1nvUjsYJVyFGSBXDir/HNMr63vTDQKQ2x595vxOVx0Wb48aE3/o27bg==</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
